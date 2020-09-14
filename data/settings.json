@@ -1,22 +1,22 @@
 {
   "organizer": {
-    "name": "GDG Lviv",
-    "twitter": "gdglviv",
-    "blog": "https://medium.com/gdg-lviv",
-    "url": "http://lviv.gdg.org.ua/"
+    "name": "GDG Sweden",
+    "twitter": "",
+    "blog": "",
+    "url": ""
   },
-  "startDate": "2017-10-013T09:00:00+03:00",
-  "endDate": "2017-10-14T19:00:00+03:00",
+  "startDate": "2020-10-16T18:00:00+02:00",
+  "endDate": "2020-10-17T13:00:00+02:00",
   "webapp": {
     "shortName": "DevFest",
-    "themeColor": "#673AB7",
-    "backgroundColor": "#673AB7"
+    "themeColor": "#004b87",
+    "backgroundColor": "#004b87"
   },
   "dateFormat": {
     "locale": "en-US"
   },
   "hashtag": "DevFest",
-  "disabledSchedule": false,
+  "disabledSchedule": true,
   "navigation": [
     {
       "route": "home",
@@ -37,18 +37,13 @@
       "route": "team",
       "permalink": "/team/",
       "label": "Team"
-    },
-    {
-      "route": "blog",
-      "permalink": "/blog/",
-      "label": "Blog"
     }
   ],
   "heroSettings": {
     "home": {
-      "description": "Join the commuity, learn new things!",
+      "description": "Välkommen till festen 🎉",
       "background": {
-        "color": "#673ab7",
+        "color": "#004B87",
         "image": "/images/backgrounds/home.jpg"
       },
       "fontColor": "#FFF"
@@ -63,8 +58,8 @@
     },
     "speakers": {
       "title": "Speakers",
-      "metaDescription": "Hear from the Googlers, Partners, and Guest Speakers who are building the future of cloud. Check back often as we add more speakers, including our customers and partners.",
-      "description": "Hear from the Googlers, Partners, and Guest Speakers who are building the future of cloud. Check back often as we add more speakers, including our customers and partners.",
+      "metaDescription": "Hear from the Speakers who are building the future of IT. Check back often as we add more speakers.",
+      "description": "Hear from the Speakers who are building the future of IT. Check back often as we add more speakers.",
       "background": {
         "color": "#FFF"
       },
@@ -112,21 +107,21 @@
     }
   },
   "location": {
-    "label": "Location",
-    "name": "Planeta kino",
-    "city": "Lviv",
-    "short": "Lviv, Ukraine",
-    "address": "36 Shchyretska St, Lviv, Ukraine",
+    "label": "Online",
+    "name": "Your couch",
+    "city": "Online",
+    "short": "Your couch",
+    "address": "Your couch",
     "pointer": {
-      "latitude": 49.809841,
-      "longitude": 23.972805,
+      "latitude": 59.322529,
+      "longitude": 18.072035,
       "zoom": 5
     },
     "mapCenter": {
-      "latitude": 48,
-      "longitude": 8
+      "latitude": 53,
+      "longitude": 10
     },
-    "description": "Newly built Pivdennyi Expo is a long-awaited exhibition center in Lviv, which can fulfill the needs of the large-scale event"
+    "description": "Speakers from all around Sweden, streamed directly to your living room."
   },
   "mediaQueries": {
     "xs": {
@@ -148,23 +143,23 @@
     "follow": [
       {
         "name": "meetup",
-        "url": "https://www.meetup.com/GDG-Lviv/events/244342635/"
+        "url": ""
       },
       {
         "name": "facebook",
-        "url": "https://www.facebook.com/devfest.ukraine/"
+        "url": ""
       },
       {
         "name": "twitter",
-        "url": "https://twitter.com/devfest_ukraine/"
+        "url": ""
       },
       {
         "name": "instagram",
-        "url": "https://www.instagram.com/devfestukraine"
+        "url": ""
       },
       {
         "name": "youtube",
-        "url": "https://www.youtube.com/playlist?list=PLt8lEzcLNl31AouwDkbLbLARlQFwNS2en"
+        "url": ""
       }
     ],
     "share": [

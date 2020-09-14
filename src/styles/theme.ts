@@ -1,13 +1,15 @@
 import { css } from 'lit-element';
 
+// Palette from:
+// https://material.io/resources/color/#!/?view.left=0&view.right=1&primary.color=311B92&secondary.color=FDD835
 export const theme = css`
   :host {
-    --dark-primary-color: #512da8;
-    --default-primary-color: #673ab7;
-    --focused-color: #311b92;
-    --light-primary-color: #d1c4e9;
+    --dark-primary-color: #002459;
+    --default-primary-color: #004b87;
+    --focused-color: #4976b7;
+    --light-primary-color: #4976b7;
     --text-primary-color: #ffffff;
-    --accent-color: #ff5252;
+    --accent-color: #ffcd00;
     --primary-background-color: #ffffff;
     --primary-text-color: #424242;
     --secondary-text-color: #757575;

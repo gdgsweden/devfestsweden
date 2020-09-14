@@ -173,38 +173,23 @@ export class FooterSocial extends PolymerElement {
 
     <div class="social-group blog">
       <div class="title">
-        {$ followOur $}
-        <a
-          href="{$ organizer.blog $}"
-          {% if organizer.blog.startsWith('http') %} target="_blank" rel="noopener noreferrer" {% endif %}>
-          {$ footer.blog $}
-        </a>
+        Organized by GDG
       </div>
-    </div>
-
-    <div class="social-group social-networks">
-      <div class="title">{$ followUs $} </div>
-      <ul class="nav-inline">
-        {% for socFollow in socialNetwork.follow %}
-          <li>
-            <a
-              href="{$ socFollow.url $}"
-              target="_blank"
-              rel="noopener noreferrer"
-              ga-on="click"
-              ga-event-category="social"
-              ga-event-action="follow"
-              ga-event-label="{$ socFollow.name $}">
-              <paper-icon-button icon="hoverboard:{$ socFollow.name $}"></paper-icon-button>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-
-    <div class="social-group email">
       <div class="title">
-        <a aria-label="{$ emailUs $}" href="mailto:{$ mailto $}">{$ emailUs $}</a>
+        <a href="https://www.meetup.com/Stockholm-Google-Developer-Group/"
+        target="_blank" rel="noopener noreferrer">Sthlm</a>
+      </div>
+      <div class="title">
+        <a href="https://www.meetup.com/STHLM-Android/" target="_blank" rel="noopener noreferrer">Sthlm Android</a>
+      </div>
+      <div class="title">
+        <a href="https://www.meetup.com/GDG-Cloud-Stockholm/" target="_blank" rel="noopener noreferrer">Sthlm Cloud</a>
+      </div>
+      <div class="title">
+        <a href="https://www.meetup.com/GDGWestSweden/" target="_blank" rel="noopener noreferrer">West Sweden</a>
+      </div>
+      <div class="title">
+        <a href="https://www.meetup.com/GDG-East-Sweden/" target="_blank" rel="noopener noreferrer">East Sweden</a>
       </div>
     </div>
 `;
