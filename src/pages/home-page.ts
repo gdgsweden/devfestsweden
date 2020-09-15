@@ -5,6 +5,7 @@ import '../components/about-block';
 import '../elements/about-organizer-block';
 import '../elements/featured-videos';
 import '../elements/fork-me-block';
+import '../elements/youtube-embed-block';
 import '../elements/gallery-block';
 import '../elements/latest-posts-block';
 import '../elements/map-block';
@@ -252,6 +253,7 @@ export class HomePage extends ReduxMixin(PolymerElement) {
       <about-block></about-block>
       <speakers-block></speakers-block>
 <!--      <subscribe-block></subscribe-block>-->
+      <youtube-embed-block></youtube-embed-block>
       <tickets-block></tickets-block>
       <gallery-block></gallery-block>
       <about-organizer-block></about-organizer-block>
