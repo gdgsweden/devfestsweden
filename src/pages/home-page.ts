@@ -12,7 +12,6 @@ import '../elements/map-block';
 import '../elements/partners-block';
 import '../elements/speakers-block';
 import '../elements/subscribe-block';
-import '../elements/tickets-block';
 import { ReduxMixin } from '../mixins/redux-mixin';
 import { RootState } from '../store';
 import { toggleVideoDialog } from '../store/ui/actions';
@@ -158,29 +157,25 @@ export class HomePage extends ReduxMixin(PolymerElement) {
           </div>
 
           <div class="action-buttons" layout horizontal center-justified wrap>
-<!--            <paper-button-->
-<!--              class="watch-video"-->
-<!--              on-click="_playVideo"-->
-<!--              ga-on="click"-->
-<!--              ga-event-category="video"-->
-<!--              ga-event-action="watch"-->
-<!--              ga-event-label="hero block - view highlights"-->
-<!--            >-->
-<!--              <iron-icon icon="hoverboard:movie"></iron-icon>-->
-<!--              {$ viewHighlights $}-->
-<!--            </paper-button>-->
             <paper-button
-              on-click="_scrollToTickets"
+              class="watch-video"
+              on-click="_scrollToYoutube"
               ga-on="click"
-              ga-event-category="tickets"
-              ga-event-action="scroll"
-              ga-event-label="hero block - scroll to tickets"
+              ga-event-category="video"
+              ga-event-action="watch"
+              ga-event-label="hero block - view highlights"
               primary
-              invert
-            >
-              <iron-icon icon="hoverboard:ticket"></iron-icon>
-              {$ buyTicket $}
+              invert >
+              <iron-icon icon="hoverboard:youtube"></iron-icon>
+              Watch it live
             </paper-button>
+
+            <a href="{$ ticketsUrl $}" target="_blank" rel="noopener noreferrer">
+              <paper-button primary invert>
+                <iron-icon icon="hoverboard:calendar"></iron-icon>
+                Save it on Calendar
+              </paper-button>
+            </a>
           </div>
 
           <div class="scroll-down" on-click="_scrollNextBlock">
@@ -254,7 +249,7 @@ export class HomePage extends ReduxMixin(PolymerElement) {
       <speakers-block></speakers-block>
 <!--      <subscribe-block></subscribe-block>-->
       <youtube-embed-block></youtube-embed-block>
-      <tickets-block></tickets-block>
+<!--      <tickets-block></tickets-block>-->
       <gallery-block></gallery-block>
       <about-organizer-block></about-organizer-block>
 <!--      <featured-videos></featured-videos>-->
@@ -283,11 +278,11 @@ export class HomePage extends ReduxMixin(PolymerElement) {
     });
   }
 
-  _scrollToTickets() {
+  _scrollToYoutube() {
     const Elements = (window as TempAny).HOVERBOARD.Elements;
     const toolbarHeight = Elements.HeaderToolbar.getBoundingClientRect().height - 1;
-    const ticketsBlockPositionY = Elements.Tickets.getBoundingClientRect().top - toolbarHeight;
-    scrollToY(ticketsBlockPositionY, 600, 'easeInOutSine');
+    const youtubeBlockPositionY = Elements.YoutubeEmbedBlock.getBoundingClientRect().top - toolbarHeight;
+    scrollToY(youtubeBlockPositionY, 600, 'easeInOutSine');
   }
 
   _scrollNextBlock() {

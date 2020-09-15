@@ -3,6 +3,7 @@ import '@polymer/paper-button';
 import { html, PolymerElement } from '@polymer/polymer';
 import './hoverboard-icons';
 import './shared-styles';
+import {TempAny} from "../../functions/src/temp-any";
 
 class YoutubeEmbedBlock extends PolymerElement {
   static get template() {
@@ -41,6 +42,11 @@ class YoutubeEmbedBlock extends PolymerElement {
 
   static get is() {
     return 'youtube-embed-block';
+  }
+
+  connectedCallback() {
+    super.connectedCallback();
+    (window as TempAny).HOVERBOARD.Elements.YoutubeEmbedBlock = this;
   }
 }
 
