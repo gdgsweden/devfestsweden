@@ -89,14 +89,14 @@
     "title": "About",
     "callToAction": {
       "featuredSessions": {
-        "description": "DevFest Sweden brings together experts in Android, Web and Cloud technologies for 2 days of sessions, workshops and showcases.",
-        "label": "Explore featured session",
-        "link": ""
+        "description": "DevFest Sweden will be a 2-days event with talks from experts in Android, Web and Cloud technologies. The event is completely free and will be completely only so you can enjoy it directly from your couch",
+        "label": "Explore the agenda",
+        "link": "/schedule"
       },
-      "howItWas": {
-        "description": "TODO Add some text here TODO.",
-        "label": "TODO Add some text here",
-        "youtubeId": ""
+      "featuredSpeakers": {
+        "description": "Even if we're remote, DevFest Sweden is next to you! Our local speakers are coming on stage to craft an event that 100% community organized by the Swedish GDGs",
+        "label": "Meet the speakers",
+        "link": "/speakers"
       }
     },
     "statisticsBlock": {
@@ -110,7 +110,7 @@
       },
       "sessions": {
         "label": "Sessions",
-        "number": "8"
+        "number": "7"
       },
       "tracks": {
         "label": "Speakers",

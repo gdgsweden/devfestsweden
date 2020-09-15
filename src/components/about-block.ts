@@ -72,8 +72,6 @@ export class AboutBlock extends ThemedElement {
               ga-event-category="video"
               ga-event-action="watch"
               ga-event-label="about block - {$ aboutBlock.callToAction.featuredSessions.label $}"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <paper-button class="animated icon-right">
                 <span class="cta-label">{$ aboutBlock.callToAction.featuredSessions.label $}</span>
@@ -81,18 +79,18 @@ export class AboutBlock extends ThemedElement {
               </paper-button>
             </a>
 
-            <p>{$ aboutBlock.callToAction.howItWas.description $}</p>
-            <paper-button
-              class="animated icon-right"
-              @click="${this.playVideo}"
+            <p>{$ aboutBlock.callToAction.featuredSpeakers.description $}</p>
+            <a
+              href="{$ aboutBlock.callToAction.featuredSpeakers.link $}"
               ga-on="click"
               ga-event-category="video"
               ga-event-action="watch"
-              ga-event-label="about block - {$ aboutBlock.callToAction.howItWas.label $}"
+              ga-event-label="about block - {$ aboutBlock.callToAction.featuredSpeakers.label $}"
             >
-              <span>{$ aboutBlock.callToAction.howItWas.label $}</span>
-              <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
-            </paper-button>
+              <paper-button class="animated icon-right">
+                <span class="cta-label">{$ aboutBlock.callToAction.featuredSpeakers.label $}</span>
+                <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
+              </paper-button>
           </div>
 
           <div class="statistics-block">
