@@ -249,7 +249,7 @@
     "blocks": [
       {
         "title": "Organizer",
-        "description": "DevFest Sweden is organized with support of 10 GDGs from all around Sweden 🇸🇪",
+        "description": "DevFest Sweden is organized with support of 5 GDGs from all around Sweden 🇸🇪",
         "callToAction": {
           "label": "Open team page",
           "link": "/team"
