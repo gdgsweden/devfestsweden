@@ -27,15 +27,17 @@ class YoutubeEmbedBlock extends PolymerElement {
         <p>
           Our event will be livestreamed on Youtube. You can watch it directly from here:
         </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=h5d-EOTWOOU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <a href="https://youtube.com/">
           <div class="cta-button">
-            <paper-button class="icon-right">
+            <paper-button class="icon-left">
               <iron-icon icon="hoverboard:youtube"></iron-icon>
               <span class="cta-label">Open on Youtube</span>
             </paper-button>
           </div>
         </a>
+        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"
+            allowfullscreen frameborder="0" height="315"
+            src="https://www.youtube.com/embed/h5d-EOTWOOU" width="560"/>
       </div>
     `;
   }
