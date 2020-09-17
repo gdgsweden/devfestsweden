@@ -26,7 +26,7 @@ import 'plastic-image';
 import './components/hero-block';
 import { log } from './console';
 import './elements/dialogs/feedback-dialog';
-import './elements/dialogs/previous-speaker-details';
+// import './elements/dialogs/previous-speaker-details';
 import './elements/dialogs/session-details';
 import './elements/dialogs/signin-dialog';
 import './elements/dialogs/speaker-details';
@@ -44,7 +44,7 @@ import './pages/blog-page';
 import './pages/coc-page';
 import './pages/faq-page';
 import './pages/home-page';
-import './pages/previous-speakers-page';
+// import './pages/previous-speakers-page';
 import './pages/schedule-page';
 import './pages/speakers-page';
 import './pages/team-page';
@@ -253,10 +253,10 @@ export class HoverboardApp extends ReduxMixin(PolymerElement) {
             <blog-page name="blog" route="[[subRoute]]"></blog-page>
             <schedule-page name="schedule" route="[[subRoute]]"></schedule-page>
             <speakers-page name="speakers" route="[[subRoute]]"></speakers-page>
-            <previous-speakers-page
-              name="previous-speakers"
-              route="[[subRoute]]"
-            ></previous-speakers-page>
+<!--            <previous-speakers-page-->
+<!--              name="previous-speakers"-->
+<!--              route="[[subRoute]]"-->
+<!--            ></previous-speakers-page>-->
             <team-page name="team"></team-page>
             <faq-page name="faq"></faq-page>
             <coc-page name="coc"></coc-page>
@@ -282,12 +282,12 @@ export class HoverboardApp extends ReduxMixin(PolymerElement) {
         no-cancel-on-outside-click="[[viewport.isPhone]]"
       ></speaker-details>
 
-      <previous-speaker-details
-        opened="[[dialogs.previousSpeaker.isOpened]]"
-        speaker="[[dialogs.previousSpeaker.data]]"
-        with-backdrop="[[viewport.isTabletPlus]]"
-        no-cancel-on-outside-click="[[viewport.isPhone]]"
-      ></previous-speaker-details>
+<!--      <previous-speaker-details-->
+<!--        opened="[[dialogs.previousSpeaker.isOpened]]"-->
+<!--        speaker="[[dialogs.previousSpeaker.data]]"-->
+<!--        with-backdrop="[[viewport.isTabletPlus]]"-->
+<!--        no-cancel-on-outside-click="[[viewport.isPhone]]"-->
+<!--      ></previous-speaker-details>-->
 
       <session-details
         opened="[[dialogs.session.isOpened]]"
