@@ -26,7 +26,7 @@ export class CocPage extends PolymerElement {
         font-color="{$ heroSettings.coc.fontColor $}"
         active="[[active]]"
       >
-        <div class="hero-title">{$ heroSettings.coc.title $}</div>
+        <div class="hero-title highlight-font">{$ heroSettings.coc.title $}</div>
         <p class="hero-description">{$ heroSettings.coc.description $}</p>
       </hero-block>
 

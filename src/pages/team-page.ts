@@ -142,7 +142,7 @@ export class TeamPage extends ReduxMixin(PolymerElement) {
         font-color="{$ heroSettings.team.fontColor $}"
         active="[[active]]"
       >
-        <div class="hero-title">{$ heroSettings.team.title $}</div>
+        <div class="hero-title highlight-font">{$ heroSettings.team.title $}</div>
         <p class="hero-description">{$ heroSettings.team.description $}</p>
       </hero-block>
 

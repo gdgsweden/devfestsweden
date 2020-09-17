@@ -102,7 +102,7 @@ export class BlogListPage extends ReduxMixin(PolymerElement) {
         font-color="{$ heroSettings.blog.fontColor $}"
         active="[[active]]"
       >
-        <div class="hero-title">{$ heroSettings.blog.title $}</div>
+        <div class="hero-title highlight-font">{$ heroSettings.blog.title $}</div>
         <p class="hero-description">{$ heroSettings.blog.description $}</p>
       </hero-block>
 

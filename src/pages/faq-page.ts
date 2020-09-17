@@ -26,7 +26,7 @@ export class FaqPage extends PolymerElement {
         font-color="{$ heroSettings.faq.fontColor $}"
         active="[[active]]"
       >
-        <div class="hero-title">{$ heroSettings.faq.title $}</div>
+        <div class="hero-title highlight-font">{$ heroSettings.faq.title $}</div>
         <p class="hero-description">{$ heroSettings.faq.description $}</p>
       </hero-block>
 

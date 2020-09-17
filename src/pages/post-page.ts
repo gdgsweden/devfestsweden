@@ -119,7 +119,7 @@ export class PostPage extends ReduxMixin(PolymerElement) {
         font-color="#fff"
         active="[[active]]"
       >
-        <div class="hero-title">[[post.title]]</div>
+        <div class="hero-title highlight-font">[[post.title]]</div>
       </hero-block>
 
       <div class="container-narrow">
