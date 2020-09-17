@@ -171,7 +171,7 @@ export class HeaderToolbar extends ReduxMixin(PolymerElement) {
           >
 
           <a
-            href$="[[_getTicketUrl(tickets)]]"
+            href="{$ ticketsUrl $}"
             target="_blank"
             rel="noopener noreferrer"
             ga-on="click"
