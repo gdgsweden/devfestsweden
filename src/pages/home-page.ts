@@ -156,23 +156,23 @@ export class HomePage extends ReduxMixin(PolymerElement) {
           </div>
 
           <div class="action-buttons" layout horizontal center-justified wrap>
-            <paper-button
-              class="watch-video"
-              on-click="_scrollToYoutube"
-              ga-on="click"
-              ga-event-category="video"
-              ga-event-action="watch"
-              ga-event-label="hero block - view highlights"
-              primary
-              invert >
-              <iron-icon icon="hoverboard:youtube"></iron-icon>
-              Watch it live
-            </paper-button>
+<!--            <paper-button-->
+<!--              class="watch-video"-->
+<!--              on-click="_scrollToYoutube"-->
+<!--              ga-on="click"-->
+<!--              ga-event-category="video"-->
+<!--              ga-event-action="watch"-->
+<!--              ga-event-label="hero block - view highlights"-->
+<!--              primary-->
+<!--              invert >-->
+<!--              <iron-icon icon="hoverboard:youtube"></iron-icon>-->
+<!--              Watch it live-->
+<!--            </paper-button>-->
 
             <a href="{$ ticketsUrl $}" target="_blank" rel="noopener noreferrer">
               <paper-button primary invert>
-                <iron-icon icon="hoverboard:calendar"></iron-icon>
-                Save it on Calendar
+                <iron-icon icon="hoverboard:ticket"></iron-icon>
+                Register
               </paper-button>
             </a>
           </div>
