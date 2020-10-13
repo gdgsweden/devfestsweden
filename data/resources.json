@@ -90,7 +90,7 @@
     "title": "About",
     "callToAction": {
       "featuredSessions": {
-        "description": "DevFest Sweden will be a 2-days event with talks from experts in Android, Web and Cloud technologies. The event is completely free and will be completely only so you can enjoy it directly from your couch",
+        "description": "DevFest Sweden will be a 2-days event with talks from experts in Android, Web and Cloud technologies. The event is completely free and will be streamed online so you can enjoy it directly from your couch",
         "label": "Explore the agenda",
         "link": "/schedule"
       },
